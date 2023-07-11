@@ -1,0 +1,316 @@
+<div id="collapse__our-outdoor" class="infotab__body show">
+
+    <p>Select an Odyssey Nursery and take a look around:</p>
+
+    <div class="tabs tabs--small tabs--fullwidth">
+        <div class="container">
+            <div class="tabs__items justify-content-start">
+                <a class="tabs__item active" data-toggle="collapse" href="#collapseOutdoor1" role="button"
+                   aria-expanded="true" aria-controls="collapseOutdoor1">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Jumeirah</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor2" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor2">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Umm Suqeim 2</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor3" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor3">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Living Legends</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor6" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor6">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Shiekh Zayed Road</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor7" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor7">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Jumeirah Beach Residence</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor8" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor8">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Meydan</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor4" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor4">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Khalifa City A</span>
+                </a>
+                <a class="tabs__item" data-toggle="collapse" href="#collapseOutdoor5" role="button"
+                   aria-expanded="false" aria-controls="collapseOutdoor5">
+                    <span class="tabs__title">Odyssey</span>
+                    <span class="tabs__subtitle">Mushrif</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor2" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/BurjOutdoor/BurjOutdoor1.jpg',
+                        img_url ~ '/BurjOutdoor/BurjOutdoor2.jpg',
+                        img_url ~ '/BurjOutdoor/BurjOutdoor3.jpg',
+                        img_url ~ '/BurjOutdoor/BurjOutdoor4.jpg',
+                        img_url ~ '/BurjOutdoor/BurjOutdoor5.jpg',
+                        img_url ~ '/BurjOutdoor/BurjOutdoor6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery2">
+                            <img src="{{ Image(image)|resize(367, 367, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor1" class="collapse show" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor1.jpg',
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor2.jpg',
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor3.jpg',
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor4.jpg',
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor5.jpg',
+                        img_url ~ '/OD_UmmSuqeim/UmmSuqeimOutdoor6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery1">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor3" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor1.jpg',
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor2.jpg',
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor3.jpg',
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor4.jpg',
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor5.jpg',
+                        img_url ~ '/LivingLegends_Outdoor/LivingLegends_Outdoor6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery3">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor4" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor1.jpg',
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor2.jpg',
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor3.jpg',
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor4.jpg',
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor5.jpg',
+                        img_url ~ '/OD_KhalifaCity/KhalifaCityOutdoor6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery4">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor5" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor1.jpg',
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor2.jpg',
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor3.jpg',
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor4.jpg',
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor5.jpg',
+                        img_url ~ '/OD_Mushrif/MushrifOutdoor6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery5">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor6" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/SZR/DSC06914.jpg',
+                        img_url ~ '/SZR/DSC06918.jpg',
+                        img_url ~ '/SZR/DSC06922.jpg',
+                        img_url ~ '/SZR/DSC07005.jpg',
+                        img_url ~ '/SZR/DSC07022.jpg',
+                        img_url ~ '/SZR/DSC07025.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery6">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor7" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/JBR/jbr_1.jpg',
+                        img_url ~ '/JBR/jbr_2.jpg',
+                        img_url ~ '/JBR/jbr_3.jpg',
+                        img_url ~ '/JBR/jbr_4.jpg',
+                        img_url ~ '/JBR/jbr_5.jpg',
+                        img_url ~ '/JBR/jbr_6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery7">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collapseOutdoor8" class="collapse" data-parent="#collapse__our-outdoor">
+        <div class="d-flex flex-wrap">
+            <div class="infotab__left w-100">
+                <h6 class="infotab__subtitle">Stunning indoor and outdoor spaces</h6>
+                <div class="infotab__text">
+                    <p>Odyssey Nurseries offer to the little ones secure, loving and stimulating environment in cosy
+                        premises in prime locations, Odyssey is a place where happiness is organic.</p>
+
+                    <p>By incorporating Reggio Emilia approach, we try to use material we find outside in the nature and
+                        get creative! We reuse and upcycle and use our imagination and creativity while helping the
+                        environment!</p>
+                </div>
+            </div>
+            <div class="infotab__right w-100">
+                <div class="environments__slides environments__slides--col3">
+                    {% set images = [
+                        img_url ~ '/meydan/meydan_1.jpg',
+                        img_url ~ '/meydan/meydan_2.jpg',
+                        img_url ~ '/meydan/meydan_3.jpg',
+                        img_url ~ '/meydan/meydan_4.jpg',
+                        img_url ~ '/meydan/meydan_5.jpg',
+                        img_url ~ '/meydan/meydan_6.jpg'
+                    ] %}
+                    {% for image in images %}
+                        <a class="environments__slide mobx" href="{{ image }}" data-rel="outdoorGallery8">
+                            <img src="{{ Image(image)|resize(368, 368, 'center') }}">
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

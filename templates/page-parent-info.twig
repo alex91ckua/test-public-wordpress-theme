@@ -1,0 +1,371 @@
+{% extends "base.twig" %}
+{% block content %}
+
+    <section class="text_section_v2 pb-0">
+        <div class="container text-center">
+            <div class="text_section_v2__wrapper">
+                <h4 class="text_section_v2__title">Parent Information</h4>
+                <h5 class="text_section_v2__subtitle">
+                    At Odyssey Nursery, we work with parents to understand more about their child. This is how we ensure
+                    their growth is successful & fulfilled.
+                </h5>
+                <p>
+                    We like to work in partnership with parents to successfully settle their children into the nursery.
+                    We then continue this relationship throughout the child’s time at nursery.
+                </p>
+                <p>
+                    Parental involvement is highly beneficial to your child’s learning so we’re here to support this.
+                    Parents are always welcome in the nursery, and we invite you to be involved with your child’s
+                    learning & interests.
+                    Stay up to date with your child’s progress through their project portfolio and daily updates on our
+                    app.
+                </p>
+            </div>
+    </section>
+
+    <section class="infotabs">
+        <div class="container">
+            <button class="infotab collapsed" id="timetable" type="button" data-toggle="collapse"
+                    data-target="#collapse3_1" aria-expanded="true" aria-controls="collapse3_1">
+                <span class="infotab__title">Timetable</span>
+            </button>
+            <div id="collapse3_1" class="collapse infotab__body">
+                <div class="infotab__left">
+                    <div class="infotab__text">
+                        <p>
+                           Odyssey Nursery caters to your busy schedule and is open from 7:30am to 6:00pm, Monday to Friday.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center mt-5">
+                        <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a Tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Watch Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="infotab__right">
+                    <section class="smallgallery">
+                        <a href="{{ img_url }}/parent-info/parent-info-timetable.jpg"
+                           class="smallgallery__featured mobx">
+                            <img src="{{ img_url }}/parent-info/parent-info-timetable.jpg"/>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <button class="infotab collapsed" id="tuition-discount" type="button" data-toggle="collapse"
+                    data-target="#collapse3_2" aria-expanded="true" aria-controls="collapse3_2">
+                <span class="infotab__title">Tuition fee discount offers</span>
+            </button>
+            <div id="collapse3_2" class="collapse infotab__body">
+                <div class="infotab__left w-100">
+                    <div class="infotab__text">
+                        <p>
+                            At Odyssey Nursery, all tuition fees are payable when the child first attends the nursery
+                            and are in accordance with the fee structure established by Kids First Group under the
+                            guidance of KHDA/ADEK established School Fee Framework.
+                        </p>
+
+                        <strong>Sibling discounts - 5% & 10% savings</strong><br>
+                        <br>
+
+                        <p>
+                            Upon registering a sibling, you will be rewarded with a 5% discount off the term fee for the
+                            older sibling. Once there is only one of the siblings attending nursery, the discount will
+                            be retracted. In case of triplets, you will be rewarded 10% discount off the term fee.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center mt-5">
+                            <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a Tour</a>
+                            <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Watch Virtual Tour</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="infotab collapsed" id="how-to-enrol" type="button" data-toggle="collapse"
+                    data-target="#collapse3_3" aria-expanded="true" aria-controls="collapse3_3">
+                <span class="infotab__title">How to enroll your child</span>
+            </button>
+            <div id="collapse3_3" class="collapse infotab__body">
+                <div class="infotab__left">
+                    <div class="infotab__text">
+                        <p>
+                            You will need to register online and then a representative from Odyssey will be in touch to
+                            help you complete your registration. This is when you will be able to select the days and
+                            times you wish to place your child into your chosen Odyssey Nursery.
+                        </p>
+                    </div>
+
+                    <h6 class="infotab__subtitle">Selecting the days</h6>
+                    <div class="infotab__text">
+                        <ul class="list-unstyled">
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                        </ul>
+                    </div>
+
+                    <h6 class="infotab__subtitle">Selecting session times</h6>
+                    <div class="infotab__text">
+                        <p>Our session times are:</p>
+                        <ul class="list-unstyled">
+                            <li>7:30am - 8:00am</li>
+                            <li>8:00am - 1:00pm</li>
+                            <li>8:00am - 2:00pm</li>
+                            <li>8:00am - 3:00pm</li>
+                            <li>8:00am - 4:00pm</li>
+                            <li>8:00am - 5:00pm</li>
+                            <li>8:00am - 6:00pm</li>
+                        </ul>
+                    </div>
+
+                    <h6 class="infotab__subtitle">Documentation required</h6>
+                    <div class="infotab__text">
+                        <p>The following documents are required to complete the registration process</p>
+                        <ul class="list-unstyled">
+                            <li>+ Registration Form</li>
+                            <li>+ Individual Profile & Care Plan Form</li>
+                            <li>+ Clinic Information Form</li>
+                            <li>+ Visual Media Consent Form</li>
+                            <li>+ Copy of Child's Birth Certificate</li>
+                            <li>+ Copy of Child's Immunization Records</li>
+                            <li>+ Copy of Child's Medical Insurance Card</li>
+                            <li>+ Copy of Child's Emirates ID, Passport with Valid Visa</li>
+                            <li>+ Copy of Father's Passport with Valid Visa</li>
+                            <li>+ Copy of Mother's Passport with Valid Visa</li>
+                            <li>+ Copy of Mother's Emirates ID</li>
+                            <li>+ Copy of Father's Emirates ID</li>
+                            <li>+ 4 Copies of Passport-sized Photographs</li>
+                            <li>+ Attached to the Appropriate Forms (child)</li>
+                            <li>+ Fees Information Policy</li>
+                        </ul>
+                        <div class="d-flex flex-wrap justify-content-center mt-5">
+                            <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a Tour</a>
+                            <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Watch Virtual Tour</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="infotab__right">
+                    <section class="smallgallery">
+                        <a href="{{ img_url }}/odyssey_howtoenrolyourchild_.jpg" class="smallgallery__featured mobx">
+                            <img src="{{ img_url }}/odyssey_howtoenrolyourchild_.jpg"/>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+           {# <button class="infotab collapsed" id="covid" type="button" data-toggle="collapse" data-target="#collapse3_4"
+                    aria-expanded="true" aria-controls="collapse3_4">
+                <span class="infotab__title">Covid safety measures</span>
+            </button>
+            <div id="collapse3_4" class="collapse infotab__body">
+                <div class="infotab__left">
+                    <h6 class="infotab__subtitle">Dedicated bubbles</h6>
+                    <div class="infotab__text">
+                        <p>By following best practices shared around the world and following ministry guidelines we will
+                            operate in a safe manner to avoid cross contamination as much as humanly possible. Noting we
+                            can not ensure children under the age of 6 can socially distance. they will carry out their
+                            day within their bubbles of classmates and practioners.</p>
+                        <p>
+                            Watch video for more infomation:<br/><a class="mobx" href="https://youtu.be/xVXVViqOSUw">https://www.youtube.com/watch?v=xVXVViqOSUw</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="infotab__right">
+                    <section class="smallgallery">
+                        <a href="https://youtu.be/xVXVViqOSUw" class="smallgallery__featured mobx">
+                            <img src="{{ img_url }}/covid-safety-preview.jpg"/>
+                        </a>
+                    </section>
+                </div>
+            </div>#}
+
+            <button id="health-and-safety" class="infotab collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapse3_5" aria-expanded="true" aria-controls="collapse3_5">
+                <span class="infotab__title">Health and safety</span>
+            </button>
+            <div id="collapse3_5" class="collapse infotab__body">
+                <div class="infotab__left">
+                    <div class="infotab__text">
+                        <p>At Odyssey Nursery, the safety and security of your children is our top
+                            priority.</p>
+
+                        <p>+ We offer a CARD ONLY entry system for parents as well as an intercom visitor system.</p>
+
+                        <p>+ CCTV cameras at the nursery are present within the building for internal use only. These
+                            can be viewed at parent's requests.</p>
+
+                        <p>+ Our qualified nurse conducts regular safety sweeps. She will identify any dangers she may
+                            see in and out of the nursery building and check on children's health.</p>
+
+                        <p>+ The outside areas are all fenced to ensure that children cannot exit the premises at all.
+                            We also have fences to separate the younger children from the bigger children during play
+                            times, when chances of rough play could happen.</p>
+
+                        <p>+ If a parent is unable to collect their child and wishes to send a relative or someone
+                            unknown to nursery staff, we must be given the secret password or have proof of rights to
+                            collect the child before they will be released.</p>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center mt-5">
+                        <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a Tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Watch Virtual Tour</a>
+                    </div>
+                </div>
+                <div class="infotab__right">
+                    <section class="smallgallery">
+                        <a href="{{ img_url }}/parent-info/parent-info-health-and-safety.jpg"
+                           class="smallgallery__featured mobx">
+                            <img src="{{ img_url }}/parent-info/parent-info-health-and-safety.jpg"/>
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            {# <div id="settling-in-period"></div>
+            <button class="infotab collapsed" id="settling-in-process" type="button" data-toggle="collapse"
+                    data-target="#collapse3_6" aria-expanded="true" aria-controls="collapse3_6">
+                <span class="infotab__title">Settling in process guide for parents</span>
+            </button>
+            <div id="collapse3_6" class="collapse infotab__body">
+                <div class="infotab__left w-100">
+                    <h6 class="infotab__subtitle">Purpose</h6>
+                    <div class="infotab__text">
+                        <p>At Odyssey Nursery we want children to feel safe, stimulated and happy in the
+                            setting and to feel secure and comfortable with staff. We also want parents/carers to have
+                            condence in both their child's wellbeing and their own role as active partners with the
+                            nursery.</p>
+                    </div>
+
+                    <h6 class="infotab__subtitle">Policy statement</h6>
+                    <div class="infotab__text">
+                        <p>We aim to make the setting a welcoming place where children settle quickly and easily because
+                            consideration has been given to the individual needs and circumstances of children and their
+                            families.</p>
+                    </div>
+
+                    <h6 class="infotab__subtitle">Methods</h6>
+                    <div class="infotab__text">
+                        <p>
+                            Children cannot play or learn successfully if they are anxious and unhappy. Our settling -in
+                            procedures aim to assist parents to help their child to feel comfortable in the nursery, to
+                            benefit from what it has to offer, to be happy to stay with their teacher and to be
+                            confident that their parents will return at the end of the session. We do not believe that
+                            leaving a child to cry will help them to settle any quicker; their distress will prevent
+                            them from learning and gaining the best from setting. It can also be disruptive and can
+                            contribute to triggering similar distress in other children who would otherwise be settled.
+                        </p>
+                        <p>
+                            We use the following methods to better integrate and induct the younger children into the
+                            setting:
+                        </p>
+                        <ul>
+                            <li>
+                                Before a child starts attending the nursery, we use a variety of ways to provide his/her
+                                parents/carers with information via email and inviting you to visit the nursery and have
+                                a walk around the week before your child is due to start so the setting becomes familiar
+                                to them. *
+                            </li>
+                            <li>
+                                We allocate a teacher to each child and his/her family. When your child starts to
+                                attend; the teacher welcomes, gets to know and looks after your child and his/her
+                                parents/carers and during the settling-in process. Please ask your teachers who is the
+                                allocated person for your child when you join.
+                            </li>
+                            <li>
+                                When a child starts attending the setting, we explain the process of settling-in with
+                                his/her parents/carer and jointly decide on the best way to help the child to settle
+                                into the nursery. New children will be invited to attend the nursery for a maximum of
+                                2-hour sessions for the first week of term. We also advise our returning children who
+                                have traveled to keep the first few days shorter as they are also settling back in.
+                            </li>
+                            <li>
+                                We have an expectation that the parent, carer or close relative, will stay in the
+                                setting, but not in the classroom for long periods of times during these settling in
+                                periods. Children are encouraged to bring any special comforters, which may help them
+                                settle more easily, i.e. soft toy, dummy, muslin.
+                            </li>
+                            <li>
+                                Depending on how freely the child moves around the room and if they have shown some
+                                acceptance of their teacher, the parent or carer may then, with the child’s knowledge,
+                                leave the room for a short period of time.
+                            </li>
+                            <li>
+                                We encourage the parent/carer to leave their child after approximately 10 minutes if
+                                they feel their child is ready on the first day. In the event that your child may not be
+                                prepared to separate from you, we suggest you remain in the classroom for 20-30 minutes
+                                maximum and then remain in the nursery environment until the teacher shall mutually
+                                decide your child should leave with you and return the next day. If you have left your
+                                child and he/she becomes extremely unsettled, we will ask you to return to calm him/her
+                                down and make sure that your child leaves on a positive note.
+                            </li>
+                            <li>
+                                We also may suggest you slowly increase your child’s time at the nursery, if he shows
+                                signs of anxiety. These periods of time can gradually increase as and when the child’s
+                                confidence grows until eventually the child stays in Nursery for a full day.
+                            </li>
+                            <li>
+                                Parents/carers must be prepared to accept that it may take some time for their child to
+                                adjust to the nursery, but very few children fail to settle eventually. We find that
+                                parents staying with their child and then leaving him/her for short periods, eases the
+                                separation process. Please remember, the more your child comes and experiences the
+                                activities on offer and sees you interacting with the staff, the more settled he/she
+                                will feel.
+                            </li>
+                            <li>
+                                Younger children typically take longer to settle, as will children who have not
+                                previously spent time away from home. Children who have had a period of absence may also
+                                need their parent/carer to be on hand to re-settle them.
+                            </li>
+                            <li>
+                                We judge a child to be settled when they have formed a relationship with their teacher
+                                and settled in the environment. For example, the child looks for the teacher when he/she
+                                arrives, goes to them for comfort, and seems pleased to be with them. The child is also
+                                familiar with where things are and is pleased to see other children and participate in
+                                activities.
+                            </li>
+                        </ul>
+                        <p>
+                            When parents leave, we ask them to say goodbye to their child and explain that they will be
+                            coming back, and when. We advise parents not to leave their children on their own until at
+                            least their second visit.
+                        </p>
+                        <p>
+                            We reserve the right not to accept a child into the setting without a parent or carer if the
+                            child routinely and continually finds it distressing to be left. This is especially the case
+                            with very young children. Settling of such children will take time and the support and
+                            assistance parents and carers can give to the nursery staff will be instrumental in making
+                            the process as rapid and stress free for the child as possible.
+                        </p>
+                        <p>
+                            We do recognize every child is different and wherever possible we will work in partnership
+                            to ensure your child settles into the nursery.
+                        </p>
+                        <p>
+                            It is only when the child is happy and secure in the Nursery routine and also in the
+                            knowledge that their parent/carer will leave and return that their stay in Nursery can be
+                            lengthened.
+                        </p>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <a href="#form" class="button mr-4">Book a Tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary">Watch Virtual Tour</a>
+                    </div>
+                </div>
+            </div> #}
+
+        </div>
+    </section>
+
+    <section class="large_img_section mb-2 pb-5 d-none d-md-block">
+      <img src="{{ img_url }}/Parents_Info_Desktop.jpg">
+    </section>
+
+    <section class="large_img_section mb-2 pb-5 d-block d-md-none">
+      <img src="{{ img_url }}/Parents_Info_Mobile.jpg">
+    </section>
+
+    {% include 'partial/fullwidth-form.twig' %}
+
+{% endblock %}

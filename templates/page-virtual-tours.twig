@@ -1,0 +1,54 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <section class="text_section_v2 pb-0">
+        <div class="container text-center">
+            <div class="text_section_v2__wrapper">
+                <h4 class="text_section_v2__title">
+                    Odyssey Virtual Tours
+                </h4>
+                <div class="text_section_v2__text">
+                    Click on the videos below to take a virtual tour of our locations throughout the UAE. If you’d like
+                    to visit us in person, use the form at the bottom of the page to book an in-person tour with our
+                    friendly staff.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video_section">
+        <div class="container">
+            {% set video_data = [
+                { video_url: 'https://youtu.be/WaO4fSSy710', name: 'Umm Suqeim 2, Abu Dhabi', img_filename: 'suqeim_preview.jpg' },
+                { video_url: 'https://youtu.be/sv7hszhf-qg', name: 'Jumeirah, Dubai', img_filename: 'burj_preview.jpg' },
+                { video_url: 'https://youtu.be/VInZaaX7rls', name: 'Jumeirah Beach Residences, Dubai', img_filename: 'jbr_preview_1.jpg' },
+                { video_url: 'https://youtu.be/GwgzJUT72XM', name: 'Living Legends, Dubai', img_filename: 'legends_preview.jpg' },
+                { video_url: 'https://youtu.be/2GWAm1DV6mI', name: 'Khalifa City A, Abu Dhabi', img_filename: 'khalifa_preview.jpg' },
+                { video_url: 'https://youtu.be/1RwkWCNi3iY', name: 'Mushrif, Abu Dhabi', img_filename: 'mushrif_preview.jpg' },
+                { video_url: 'https://youtu.be/PWXHaTgoY4k', name: 'Meydan, Dubai', img_filename: 'meydan_preview_1.jpg' },
+                { video_url: 'https://youtu.be/sHUmKt8xqqM', name: 'Sheikh Zayed Road, Dubai', img_filename: 'sheikh_preview_1.jpg' },
+            ] %}
+
+            <div class="row mb-4 mt-5 pt-5">
+                {% for item in video_data %}
+                    <div class="col-md-4 mb-4">
+                        <a class="mobx" href="{{ item.video_url }}" data-rel="virtual-tour">
+                            <div class="video_section__item">
+                                <div class="video_section__preview">
+                                    <img src="{{ img_url }}/{{ item.img_filename }}" class="img-fluid"/>
+
+                                    <div class="video_section__play_icon">{% include 'raw-svg/play.twig' %}</div>
+                                </div>
+                                <h4 class="video_section__title mt-4">{{ item.name }}</h4>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include 'partial/fullwidth-form.twig' %}
+
+{% endblock %}

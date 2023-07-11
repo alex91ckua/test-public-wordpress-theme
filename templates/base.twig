@@ -1,0 +1,106 @@
+{% block html_head_container %}
+
+	{% include 'html-header.twig' %}
+	{% block head %}
+		{{ parent }}
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kameron:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+		<style type="text/css">
+			{% if user %}
+				body.scrolled-down .header { top: 32px; }
+			{% endif %}
+
+			:root {
+				--base-font-name: 'GothamHTF-Book', sans-serif;
+				--secondary-font-name: 'GothamHTF-Medium';
+
+				--primary-menu-color: #FFFFFF;
+				--primary-menu-label-color: #000;
+				--primary-menu-hover-label-color: #000;
+				--primary-menu-item-color: transparent;
+				--primary-menu-hover-item-color: #679147;
+
+				--footer-color: #679147;
+				--footer-label-color: #FFFFFF;
+
+				--main-bg-color: #FFFFFF;
+				--main-bg-text-color: #000000;
+
+				--primary-color: #F2EDE9;
+				--primary-label-color: #000000;
+
+				--secondary-color: #679147;
+				--secondary-label-color: #FFFFFF;
+
+				--button-1-bg-color: #FFEA00;
+				--button-1-bg-hover-color: #679147;
+				--button-1-text-color: #000000;
+				--button-1-text-hover-color: #FFFFFF;
+				--button-1-border-color: #FFEA00;
+				--button-1-border-hover-color: #679147;
+
+				--button-2-bg-color: transparent;
+				--button-2-bg-hover-color: #679146;
+				--button-2-text-color: #679146;
+				--button-2-text-hover-color: #FFFFFF;
+				--button-2-border-color: #679146;
+				--button-2-border-hover-color: #679146;
+			}
+		</style>
+	{% endblock %}
+</head>
+{% endblock %}
+
+<body class="{{ body_class }}" data-template="base.twig">
+
+  <header class="header {{ fn('is_front_page') ? 'header--transparent' : '' }}" >
+    <div class="container">
+      <nav class="primary-menu">
+        <a href="{{ site.link }}" class="primary-menu__toggle" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <a class="primary-menu__brand" href="{{ site.link }}" >
+          <img src="{{ img_url }}/ODN-logo-white.svg" />
+        </a>
+		  <a class="primary-menu__brand primary-menu__brand--scrolled" href="{{ site.link }}" >
+			  <img src="{{ img_url }}/ODN-logo.svg" class="d-none d-md-block" />
+			  <img src="{{ img_url }}/ODN-logo-white.svg" class="d-md-none"/>
+		  </a>
+
+        {% include "partial/primary-menu.twig" with {menu: full_menu.get_items, wrap_classes: 'full'} %}
+        {% include "partial/primary-menu.twig" with {menu: primary_menu.get_items, wrap_classes: 'primary'} %}
+      </nav>
+    </div>
+  </header>
+
+	<section
+		role="main" class="page-container">
+		<div class="wrapper {{sidebar_class}}">
+			{% block content %}
+				Sorry, no content
+			{% endblock %}
+		</div>
+		{% if sidebar %}
+			<aside class="layout-sidebar">
+				{{sidebar}}
+			</aside>
+		{% endif %}
+	</section>
+
+	{% block footer %}
+		<footer id="footer">
+			{% include 'footer.twig' %}
+		</footer>
+		{{ function('wp_footer') }}
+	{% endblock %}
+
+	{{ theme.theme_mod('custom_html') }}
+	<div id="scroll-to-top"></div>
+</body>
+</html>

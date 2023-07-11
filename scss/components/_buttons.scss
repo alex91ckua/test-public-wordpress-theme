@@ -1,0 +1,71 @@
+.button {
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+  border: 2px solid var(--button-1-border-color);
+  background-color: var(--button-1-bg-color);
+  color: var(--button-1-text-color);
+  min-width: auto;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+
+
+  &--green {
+    background: #679147;
+    border-color: #679147;
+    color: #FFF;
+    padding: 5px 15px;
+  }
+
+  &--text-no-transform {
+    text-transform: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-width: 225px;
+    font-size: 14px;
+    padding: 16px 26px;
+
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &:hover, &:focus {
+    background-color: var(--button-1-bg-hover-color);
+    border-color: var(--button-1-border-hover-color);
+    color: var(--button-1-text-hover-color);
+    text-decoration: none;
+  }
+
+  &--secondary {
+    border: 2px solid var(--button-2-border-color);
+    background-color: var(--button-2-bg-color);
+    color: var(--button-2-text-color);
+
+    &:hover, &:focus {
+      background-color: var(--button-2-bg-hover-color);
+      border-color: var(--button-2-border-hover-color);
+      color: var(--button-2-text-hover-color);
+      text-decoration: none;
+    }
+  }
+
+  &--third {
+    border: 2px solid var(--button-2-border-color);
+    background-color: var(--button-2-bg-color);
+    color: var(--button-2-text-color);
+
+    &:hover, &:focus {
+      color: var(--button-3-text-color);
+      text-decoration: none;
+      opacity: .95;
+    }
+  }
+
+}

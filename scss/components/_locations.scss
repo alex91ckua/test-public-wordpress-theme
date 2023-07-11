@@ -1,0 +1,23 @@
+.locations {
+  padding: 106px 0 71px 0;
+
+  &__title, &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  .collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+  }
+}

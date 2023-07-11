@@ -1,0 +1,37 @@
+{% extends "base.twig" %}
+{% block content %}
+
+    <section class="text_section_v2 pb-0">
+        <div class="container text-center">
+            <div class="text_section_v2__wrapper">
+                <h4 class="text_section_v2__title">
+                    providing optimal guidance<br>
+                    at each stage of development
+                </h4>
+                <div class="text_section_v2__text">
+                    <p>
+                        To ensure Odyssey children grow to their full potential, we created a personalised approach for
+                        each stage of early development.
+                    </p>
+                    <p>
+                        Children at our nurseries learn both academic and vital social skills. Below we’ll walk you
+                        through how our approach changes at each new stage of development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partial/ages-section.twig' %}
+
+    <section class="large_img_section mb-2 pb-5 d-none d-md-block">
+      <img src="{{ img_url }}/Age_Groups_Page___Desktop.png">
+    </section>
+
+    <section class="large_img_section mb-2 pb-5 d-block d-md-none">
+      <img src="{{ img_url }}/reviews/age_mobile.png">
+    </section>
+
+    {% include 'partial/fullwidth-form.twig' %}
+
+{% endblock %}

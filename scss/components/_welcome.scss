@@ -1,0 +1,83 @@
+.welcome_v3 {
+  background-image: url('../static/img/Odyssey_Desktop_hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 280px 0 250px 0;
+  color: white;
+
+  &__left {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 20px;
+    }
+  }
+
+
+  @media (min-height: 800px) {
+    height: 100vh;
+  }
+
+  @include media-breakpoint-down(md) {
+    background-image: url('../static/img/welcome_mobile.jpg');
+    background-position: right;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    min-height: 100vh;
+
+    > .container {
+      margin-top: auto;
+    }
+  }
+
+  &__cta {
+    min-width: 260px;
+    box-shadow: 0px 0px 40px var(--button-1-border-color);
+
+    &:hover {
+      box-shadow: 0px 0px 40px var(--button-1-border-hover-color);
+    }
+  }
+
+  &__heading {
+    max-width: 850px;
+  }
+
+  &__title1 {
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'FreightDispProMedium';
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+
+  &__title2 {
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font-name);
+
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+  }
+
+  &__title3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 45px;
+    max-width: 430px;
+    font-family: var(--base-font-name);
+
+    small {
+      font-family: var(--base-font-name);
+      padding-top: 20px;
+      font-size: 14px;
+      display: block;
+      font-weight: 100;
+    }
+  }
+}

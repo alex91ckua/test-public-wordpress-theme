@@ -1,0 +1,35 @@
+.video_section {
+  padding-bottom: 130px;
+
+  &__title {
+    font-size: 24px;
+    color: black;
+
+    &:hover, .video_section__item:hover & {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+  }
+
+  &__item {
+    padding: 0 25px;
+  }
+
+  &__preview {
+    position: relative;
+    text-align: center;
+  }
+
+  &__play_icon {
+    color: var(--secondary-color);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+}

@@ -1,0 +1,18 @@
+{% if menu is defined %}
+	<ul class="primary-menu__items {{ wrap_classes }}">
+		{% for item in menu %}
+			<li class="primary-menu__item">
+				<a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+				{% if item.get_children|length > 0 %}
+					<ul class="primary-menu__submenu" >
+						{% for submenu_item in item.get_children %}
+							<li>
+								<a target="{{ submenu_item.target }}" href="{{ submenu_item.link }}">{{ submenu_item.title }}</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}

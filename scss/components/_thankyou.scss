@@ -1,0 +1,35 @@
+.thankyou {
+  background-color: black;
+  color: white;
+  padding: 200px 0;
+  background-size: cover;
+
+  &__wrap {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    margin-bottom: 36px;
+    font-family: var(--base-font-name);
+
+    @include media-breakpoint-down(md) {
+      font-size: 45px;
+    }
+  }
+
+  &__body {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  &__cta {
+    border-color: white;
+    color: white;
+  }
+
+  // &__img {}
+}

@@ -1,0 +1,8 @@
+{% if menu %}
+	{% for item in menu %}
+		<li>
+			<a class="{{ item.current ? 'active' : '' }}" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+		</li>
+	{% endfor %}
+{% endif %}
+

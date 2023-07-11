@@ -1,0 +1,45 @@
+<div class="upsell-popup">
+	<div class="upsell-popup__wrap">
+		<a class="upsell-close" href="#">
+      Close
+			<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewbox="0 0 64 64"><line x1="9.37" x2="54.63" y1="9.37" y2="54.63" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"/><line x1="9.37" x2="54.63" y1="54.63" y2="9.37" fill="none" stroke="#010101" stroke-miterlimit="10" stroke-width="4"/></svg>
+		</a>
+		<div class="upsell-left">
+			<h4 class="upsell-title">Summer Camp</h4>
+			<div class="upsell-text">
+				<h5 style="font-weight: 700; margin-bottom: 20px;">Action Packed Summer Camp: Lights, Camera, Adventure!</h5>
+				Behind-the-scenes camp offers an unforgettable experience for your little ones.
+			</div>
+			<div class="upsell-subtext">
+        3rd Jul - 30 Aug 2023 (Abu Dhabi)<br>
+        3rd Jul - 1 Sep 2023 (Dubai)
+      </div>
+			<div class="upsell-cta__wrap">
+        <a class="button" target="_blank" href="https://www.odysseynursery.com/lp/abudhabi-summer-camp/">Read More (Abu Dhabi)</a>
+        <a class="button button--secondary" target="_blank" href="https://www.odysseynursery.com/lp/dubai-summer-camp/">Read More (Dubai)</a>
+			</div>
+		</div>
+		<div class="upsell-right">
+			<img src="{{ img_url }}/odn-LP-hero-banner.jpg" class="img-fluid" alt=""/>
+		</div>
+	</div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    let upsellPopupEl = document.getElementsByClassName('upsell-popup')[0];
+    let upsellPopupCloseEl = document.getElementsByClassName('upsell-close')[0];
+
+    upsellPopupCloseEl.addEventListener( "click" , (e) => {
+      e.preventDefault();
+      upsellPopupEl.style.display = 'none';
+      sessionStorage.setItem('upsellPopupShowed', '1');
+    });
+
+    setTimeout(() => {
+      if (sessionStorage.getItem('upsellPopupShowed') !== '1') {
+        upsellPopupEl.style.display = 'block';
+      }
+    }, 500);
+  });
+</script>

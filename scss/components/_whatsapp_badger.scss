@@ -1,0 +1,19 @@
+.whatsapp_badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  .mobile {
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+      display: inline;
+    }
+  }
+
+  .desktop {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}

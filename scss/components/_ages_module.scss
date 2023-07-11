@@ -1,0 +1,35 @@
+.ages_module {
+  background-color: #EDE5DA;
+  padding: 111px 0;
+
+  &__title {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 20px;  font-weight: 500;
+    font-family: var(--base-font-name);
+    color: var(--secondary-color);
+  }
+
+  &__subtitle {
+    font-size: 48px;
+    margin-bottom: 34px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    @include media-breakpoint-down(md) {
+      font-size: 35px;
+    }
+  }
+
+  &__desc {
+    font-size: 16px;
+  }
+
+  &__heading {
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+
+}

@@ -1,0 +1,671 @@
+{% extends "base.twig" %}
+{% block content %}
+
+    <section class="welcome_v3">
+        <div class="container">
+            <div class="welcome_v3__left">
+                <div class="welcome_v3__heading">
+                    <h1 class="welcome_v3__title1">
+                        UAE's Leading Reggio Emilia Inspired Nurseries
+                    </h1>
+                    <h2 class="welcome_v3__title2">
+                        Nurturing Imaginative<br> Young Minds
+                    </h2>
+
+                    <h3 class="welcome_v3__title3">
+                        Progressive early-learning environment designed to cultivate independence and self-esteem
+                    </h3>
+                    <div class="d-flex flex-wrap mb-5">
+                        <a href="#approach" class="button welcome_v3__cta">LEARN MORE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--primary-color); color: black;" >
+        <div class="container py-5" >
+        <section class="infosection">
+            <div class="infosection__body">
+            <h6 class="infosection__title">Happy Staff = Happy Child</h6>
+            <div class="infosection__text">
+                <p>Our pre-schools have been awarded the prestigious 'Great Place to Work' certificate based on an extensive survey among all our staff! By fostering a supportive and inspiring environment for our staff, we ensure that your child receives the utmost care and nurturing, setting the stage for their happiness, and solid foundation for the future.</p>
+            </div>
+            <div class="d-flex flex-wrap mt-5">
+                <a href="#form" class="button mr-2 mr-lg-2 mt-2 mt-lg-0">Book a tour</a>
+                <a href="https://greatplacetowork.me/certified-organization/kids-first-group-llc/" class="button button--secondary white mt-2 mt-lg-0">Learn More</a>
+            </div>
+            </div>
+            <div class="infosection__image h-auto text-right">
+            <img src="{{ img_url }}/DSC00826_2.jpg" class="img-fluid">
+            </div>
+        </section>
+        </div>
+    </section>
+
+    {% include 'partial/events-section.twig' %}
+
+    {# <section class="small_info" >
+    <div class="container" >
+      <div class="small_info__wrap" >
+        <div class="small_info__img" >
+          <img src="{{ img_url }}/toddler-boy-playing-with.jpg" class="img-fluid"  >
+        </div>
+
+        <div class="small_info__subwrap" >
+          <h4 class="small_info__title" >Aligned with the International Baccalaureate</h4>
+          <p class="small_info__desc" >Give your child the flexibility to move anywhere in the world with an early years education aligned with the global standard in learning. The Centre of Excellence works closely with IB to deliver excellence in early education.</p>
+        </div>
+      </div>
+    </div>
+  </section> #}
+
+    <section class="approach" id="approach">
+        <div class="container">
+            <div class="approach__wrapper text-center">
+                <h6 class="approach__top_title">The Odyssey Methodology</h6>
+                <h4 class="approach__title">
+                    Creativity & Empathy<br>
+                    At The Heart Of Early Education
+                </h4>
+
+                <div class="approach__text">
+                    <p>
+                        To ensure the rapid development of your child, Odyssey Nursery adopts the best parts of the
+                        globally renowned Reggio Emilia approach and the Washington State Early Learning Developmental
+                        Benchmarks. As a result, Odyssey children are regularly admitted to the best schools.
+                    </p>
+                    <p>
+                        Your child is capable of finding unimaginable solutions to everyday challenges. Unfortunately,
+                        as children move through the traditional education system, they lose this boundless creativity
+                        often due to the play-deprived environments of most schools. Wouldn’t it be great if your child
+                        could keep that limitless thinking for life?
+                    </p>
+                    <p>
+                        Children at Odyssey learn faster because they are in control of what projects they take on. They
+                        are exposed to a full range of hands-on learning opportunities and sensory play. Research shows
+                        children strengthen their skills and abilities based on the broad range of experiences they have
+                        across their first 6 years of life, and thus Odyssey Nursery is setup to provide as many natural inputs
+                        and opportunities to experience different interactions as possible.
+                    </p>
+                    <p>
+                        Odyssey helps children become independent thinkers; ready to find creative solutions for life
+                        challenges and develop vital social skills that will set them apart in the world.
+                    </p>
+
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a Tour</a>
+                    <a href="#" onclick="j('.environments__slide')[0].click(); return false;" class="button button--secondary mt-2 mt-md-0">View Photos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="short_banner text-center"
+             style="background-image: url('{{ img_url }}/About_Us.jpg')">
+        <div class="container">
+            <div class="short_banner__wrap">
+                <div class="w-100 mb-4">
+                    <img src="{{ img_url }}/ODN-logo-white.svg" width="151" height="88">
+                </div>
+
+                <div class="short_banner__text" style="color: #FFF2DA; text-transform: initial;">
+                    "The Child Is Made of One Hundred.<br>The Child Has a Hundred Languages, a Hundred Hands, a Hundred Thoughts, a Hundred Ways of Thinking, of Speaking"
+                </div>
+              {#  <small class="short_banner__subtitle">Maria Montessori</small>#}
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 pb-5 mt-5 mb-5">
+        <div class="container">
+
+            <section class="infosection infosection--reversed pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        Full Range Of learning opportunities
+                    </h6>
+                    <h6 class="infosection__title">
+                        Stimulate free thinking<br>
+                        Via Experiential Mediums
+                    </h6>
+                    <div class="infosection__text">
+                        <p>
+                            By playing with light and marveling at the full spectrum of colours around them, Odyssey Nursery
+                            children develop a new way of looking at their environment. One fueled by curiosity and
+                            imagination.
+                        </p>
+                        <p>
+                            <strong>Technologically Advanced Classrooms</strong><br>
+                            There is something magical about seeing new concepts
+                            form and become a sparkle of creativity in your child’s eye. In our specially made
+                            classrooms, children get lost in a sea of imaginative experiences, playing with light
+                            projections, experiencing the various images grow and shrink and transform with each
+                            experimental input.
+                        </p>
+                        <p>
+                            <strong>New Experiences Every Day</strong><br>
+                            The creative learning opportunities are always evolving. Every day, we provide children with
+                            a wide range of materials, light experiments, and shadow play to actively engage all their
+                            five senses, accelerating their growth in these early stages of development.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <a href="#testimonials" class="button mr-0 mr-md-2 mt-2 mt-md-0">VIEW TESTIMONIALS</a>
+                        <a href="#approach" class="button button--secondary mt-2 mt-md-0">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image text-center">
+                    <img src="{{ img_url }}/odyssey_stimulate.jpg" class="img-fluid">
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="environments" id="environments" style="background-color: #F2EDE9; color: black;">
+        <div class="container">
+            <div class="environments__left">
+                <h5 class="environments__top_title" style="color: #679147;">
+                    Hands-on Learning
+                </h5>
+                <h5 class="environments__title">
+                    Encouraging Your Child’s Creativity To Run Wild
+                </h5>
+                <div class="environments__text">
+                    <p>
+                        A natural environment designed for learning through self-discovery and social play
+                    </p>
+
+                    <p>
+                        <strong>An Environment Encouraging Free Thinking</strong><br>
+                        Children can only grow to their full potential if they have a free environment to explore and
+                        interact with. By allowing every child to play as they want, we nurture their free thinking
+                        setting them up for success later in life.
+                    </p>
+                    <p>
+                        <strong>Creating Empathetic Adults</strong><br>
+                        The most socially adept adults have the ability to interact with others, and the empathic skills
+                        to relate to them with ease. These skills are developed early in life.
+                    </p>
+                    <p>
+                        At Odyssey Nursery we foster social playing with a diverse range of students, helping children to,
+                        sense, feel and explore these core emotional building blocks that are key pillars to developing
+                        healthy, empathetic future adults.
+                    </p>
+
+                    <div class="d-flex flex-wrap mt-5">
+                        <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a tour</a>
+                        <a href="#" onclick="j('.environments__slide')[0].click(); return false;" class="button button--secondary mt-2 mt-md-0">go to gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="environments__right">
+                <div class="environments__slides">
+                    {% for i in 1..6 %}
+                        <a class="environments__slide mobx"
+                           href="{{ img_url }}/OdysseyGallery/OdysseyGallery{{ i }}.jpg"
+                           data-rel="gallery2">
+                            <img src="{{ Image(img_url ~ '/OdysseyGallery/OdysseyGallery' ~ i ~ '.jpg')|resize(530, 300, 'center') }}">
+                        </a>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+    </section>
+
+    <section class="pt-5 mt-5 mb-5 pb-5" id="daily-updates">
+        <div class="container">
+            <section class="infosection">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title">
+                        Daily Child Updates
+                    </h6>
+                    <h6 class="infosection__title">
+                        Every Milestone Reported Every Day
+                    </h6>
+                    <div class="infosection__text">
+                        <p>We update you daily with photos and reports of your child&rsquo;s growth, and development, all direct to your phone with images &amp; stories.</p>
+
+                        <p>Our team has a direct relationship with you, providing daily updates so you are always in-the-know.</p>
+
+                        <p>Odyssey parents often tell us how excited they are to check the reports on their phones each day, eager to see their children's growth. We are your trusted partner and we value that responsibility.</p>
+                    </div>
+                    <div class="d-flex flex-wrap mt-5">
+                        <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Virtual
+                            Tours</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/photo-using-modern-smartphone-in-office.jpg">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="pt-5 mt-5 mb-5 pb-5" id="food">
+        <div class="container">
+            <section class="infosection infosection--reversed">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title">Healthy &amp; Quality Food</h6>
+                    <h6 class="infosection__title">Planned Meals to Develop Good Habits</h6>
+                    <div class="infosection__text">
+                        <p>Our specially designed meal plans support focus and learning. The children eat together,
+                            learning from one another to be interested in food and supporting good eating habits.</p>
+
+                        <p>We all know quality food is essential to growth, and being curious about nutrition is equally
+                            important. Children are taught to be willing to experience and try new things.</p>
+
+                        <p>At Odyssey Nursery we take a holistic and scientific approach to developing young minds, and in the
+                            kitchen this is equally important.</p>
+                    </div>
+
+                    <div class="d-flex flex-wrap mt-5">
+                        <a href="#form" class="button mr-0 mr-md-2 mt-2 mt-md-0">Book a tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Virtual
+                            Tours</a>
+                    </div>
+                </div>
+                <div class="infosection__image text-center">
+                    <img src="{{ img_url }}/photo-green-and-red-healthy-food.jpg" class="img-fluid">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="large_img_section mb-2 pb-5 d-none d-md-block">
+      <img src="{{ img_url }}/Homepage_reviews_1_desktop.jpg">
+    </section>
+
+    <section class="large_img_section mb-2 pb-5 d-block d-md-none">
+      <img src="{{ img_url }}/reviews/home_1line_mobile.jpg">
+    </section>
+
+    <section class="pt-5 mt-5 mb-5 pb-5">
+        <div class="container">
+            <section class="infosection">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title">Afterschool Care Program</h6>
+                    <h6 class="infosection__title">Fostering Development All-Day Until 6pm</h6>
+                    <div class="infosection__text">
+                        <p>We encourage busy parents to use our afterschool care program, allowing your child to be
+                            advancing their development all day, until you are ready to collect them afterwork at
+                            6pm.</p>
+
+                        <p>The child&rsquo;s mind is developing over 1 million new neurons every hour. For this reason
+                            it&rsquo;s recommended their minds are continually stimulated to maximise this learning.</p>
+
+                        <p>It&rsquo;s no wonder Odyssey children are regularly admitted to the best schools. Our team
+                            works tirelessly to ensure they are continually learning and adventuring, setting them up
+                            for a lifetime of success.</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="#form" class="button">Book a Tour</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">
+                            Virtual Tours
+                        </a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/odyssey_fostering_development.jpg">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="pt-5 mt-5 mb-5 pb-5">
+        <div class="container">
+            <section class="infosection infosection--reversed">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title">Our Locations</h6>
+                    <h6 class="infosection__title">Exclusive nurseries across the UAE </h6>
+                    <div class="infosection__caption">
+                        Find the closest nursery to your home so your child can enjoy an exceptional early education
+                        without taking a long commute.
+                    </div>
+                    <div class="infosection__text">
+                        <p>
+                            Over time, our network of sought-after Odyssey childcare centres has grown. We’re now in
+                            eight locations in the UAE, and it’s likely you’ll be close to one of them.
+                        </p>
+
+                        <ul class="mt-4 list-unstyled">
+                            {% for category in loc_categories %}
+                                <li>
+                                    <a href="{{ locations_url }}#{{category.slug}}">{{ category.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="d-flex flex-wrap mt-5">
+                        <a href="{{ locations_url }}" class="button mr-0 mr-md-2 mt-2 mt-md-0">View Locations</a>
+                        <a href="{{ virtual_tours_url }}" class="button button--secondary mt-2 mt-md-0">Virtual
+                            Tours</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/illustration.svg" class="img-fluid">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="short_banner text-center" style="background-image: url('{{ img_url }}/background-kid.jpg')">
+        <div class="container pt-5 pb-5">
+            <div class="short_banner__wrap">
+                <div class="w-100 mb-4">
+                    <img src="{{ img_url }}/ODN-logo-white.svg" width="151" height="88">
+                </div>
+
+                <div class="short_banner__text mb-0 mw-700 ml-auto mr-auto" style="color: #FFF2DA">
+                    Nurturing Creative Thinkers
+                    <br>For a Brighter Tomorrow
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ages_module" id="ages" style="background-color: white;">
+        <div class="container">
+            <div class="ages_module__heading text-center">
+                <h4 class="ages_module__title">Age Groups (3 months to 6 years)</h4>
+                <h2 class="ages_module__subtitle">
+                    providing optimal guidance
+                    <br>at each stage of development
+                </h2>
+                <div class="ages_module__desc">
+                    <p>
+                        At Odyssey Nursery, we adapt our approach according to your child’s needs. By giving children a
+                        personalised approach through each stage of early development, we ensure they grow into their
+                        full potential while laying the foundations for future success.
+                    </p>
+                    <p>
+                        Children at our nurseries learn both academic and vital social skills. Below we’ll walk you
+                        through how our approach changes at each new stage of development.
+                    </p>
+
+                </div>
+            </div>
+
+            <section class="infosection pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        <img src="{{ img_url }}/baby-icon.svg" width="46" height="60" class="mr-3">
+                        Babies (3-12 months)
+                    </h6>
+                    <h6 class="infosection__title">
+                        first experiences<br>
+                        That shape their future
+                    </h6>
+                    <div class="infosection__text">
+                        <p>
+                            The importance of a child’s first experiences outside home can’t be overestimated. This is
+                            when babies form their first impression of the world that shapes them for life.
+                        </p>
+                        <p>
+                            Our early learning practitioners provide the best care and encouragement for your baby. You
+                            can go about your day reassured that your child is being cared for in the same way you would
+                            care for them at home.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <a href="#form" class="button button--secondary">Learn MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/Baby-img.jpg" class="img-fluid">
+                </div>
+            </section>
+
+            <div class="infotab__hr"></div>
+
+            <section class="infosection infosection--reversed pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        <img src="{{ img_url }}/toddler-icon.svg" width="48" height="61" class="mr-3">
+                        Toddler (1-2 Years)
+                    </h6>
+                    <h6 class="infosection__title">
+                        Development through Discovery and sensory play
+                    </h6>
+                    <div class="infosection__text">
+                        <p>Toddlers learn best through hands-on experiences. Our monthly themed activities target each
+                            developmental domain, providing them with the confidence they need to grow both cognitively
+                            and socially.
+                        </p>
+                        <p>
+                            Our treasure sensory baskets help children refine their tactile senses and coordination.
+                            Infants have the freedom to explore different everyday items like bubble wrap, aluminum
+                            foil, newspaper, sponges, soft and hard wooden items. This is crucial for maximising brain
+                            connections and overall development.
+                        </p>
+                    </div>
+
+
+                    <div class="mt-5">
+                        <a href="#form" class="button button--secondary">Learn MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image"> {# image_holder #}
+                    <img src="{{ img_url }}/Toddler.jpg">
+                    {# <div class="image_holder__items" >
+            <a href="#" class="image_holder__item active" data-src="{{ img_url }}/REDWOOD_THE_PALM-4870.jpg" ></a>
+            <a href="#" class="image_holder__item" data-src="{{ img_url }}/logo-pyp-en.jpg" ></a>
+            <a href="#" class="image_holder__item" data-src="{{ img_url }}/logo-pyp-en.jpg" ></a>
+            <a href="#" class="image_holder__item" data-src="{{ img_url }}/logo-pyp-en.jpg" ></a>
+          </div> #}
+                </div>
+            </section>
+
+            <div class="infotab__hr"></div>
+
+            <section class="infosection infosection pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        <img src="{{ img_url }}/preschool-icon.svg" width="62" height="86" class="mr-3">
+                        Preschool (2-3 Years)
+                    </h6>
+                    <h6 class="infosection__title">
+                        Building independence <br>
+                        and confidence
+                    </h6>
+                    <div class="infosection__text">
+                        <p>
+                            Age 2-3 is when children start to explore on their own and build self-reliance. At this
+                            stage, cultivating self-esteem is a vital ingredient in their development.
+                        </p>
+                        <p>
+                            Our approach supports and nurtures independence by giving children the freedom to try out
+                            their own ideas & find their unique abilities.
+                        </p>
+                        <p>
+                            Through independent investigation and child-directed activities, our children develop skills
+                            and knowledge in areas such as early literacy, mathematics, science, languages,
+                            communication, and social skills.
+                        </p>
+                    </div>
+
+
+                    <div class="mt-5">
+                        <a href="#form" class="button button--secondary">Learn MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/three-kids.jpg">
+                </div>
+            </section>
+
+            <div class="infotab__hr"></div>
+
+            <section class="infosection infosection infosection--reversed pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        <img src="{{ img_url }}/foundation-icon.svg" width="55" height="57" class="mr-3">
+                        Foundation (3-4 years)
+                    </h6>
+                    <h6 class="infosection__title">
+                        Getting ready for School
+                    </h6>
+                    <div class="infosection__text">
+                        <p>
+                            Our highly-qualified and experienced teachers help make the transition from nursery to
+                            school as natural as possible. By following the Washington State Early Learning
+                            Developmental Benchmarks, we encourage the social, cognitive, physical, emotional and
+                            spiritual development of each child.
+                        </p>
+                        <p>
+                            Children are encouraged to learn at their own pace, which builds independence and, most
+                            importantly, a lifelong love for learning and knowledge.
+                        </p>
+                    </div>
+
+
+                    <div class=" infosection__button">
+                        <a href="#form" class="button button--secondary">Learn MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/two-gilrs-playing.jpg">
+                </div>
+            </section>
+
+            <div class="infotab__hr"></div>
+
+            <section class="infosection infosection infosection pb-5">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title mb-4">
+                        <img src="{{ img_url }}/advanced_montessori_icon.png" width="54" height="54" class="mr-3">
+                        Foundation 2 (4-6 Years)
+                    </h6>
+                    <h6 class="infosection__title">
+                        A Smooth Entry to School
+                    </h6>
+                    <div class="infosection__text">
+                        <p>
+                            To ensure a better and more calm transition from nursery to school, we encourage parents to
+                            allow their children to stay in their familiar nursery environment while they start their
+                            first year of school.
+                        </p>
+                        <p>
+                            Your child will receive personalised attention in small class sizes, ensuring their steady
+                            progress. There is also a French immersion programme available at the Umm Suqeim Odyssey
+                            branch, where classes will align with the French curriculum.
+                        </p>
+
+                        <p>This age group is applicable to Dubai branches only.</p>
+                    </div>
+
+
+                    <div class="infosection__button">
+                        <a href="#form" class="button button--secondary">Learn MORE</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/Foundation_2.jpg">
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="short_banner text-center"
+             style="background-image: url('{{ img_url }}/background-two-boys-one-teacher.jpg')">
+        <div class="container pt-5 pb-5">
+            <div class="short_banner__wrap">
+                <div class="w-100 mb-4">
+                    <img src="{{ img_url }}/ODN-logo-white.svg" width="151" height="88">
+                </div>
+
+                <div class="short_banner__text mb-0 ml-auto mr-auto" style="color: #FFF2DA">
+                    World-Class Early Education
+                    <br>Where Children Thrive
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 mt-5 mb-5 pb-5" id="parent-info">
+        <div class="container">
+            <section class="infosection">
+                <div class="infosection__body">
+                    <h6 class="infosection__top_title">
+                        For Parents
+                    </h6>
+                    <h6 class="infosection__title">Maximise Their Early <br>Learning at Home</h6>
+
+                    <div class="infosection__caption">
+                        At Odyssey Nursery, we focus on working with parents to understand more about their child’s
+                        development.
+                    </div>
+
+                    <div class="infosection__text">
+                        <p>
+                            We like parents to feel welcome into the nursery and we invite them to share their interests
+                            with the children.
+                        </p>
+                        <p>
+                            We like to work in partnership with parents to successfully settle their child into the
+                            nursery and continue this relationship throughout the child’s time with us.
+                        </p>
+                        <p>
+                            Parents are encouraged to share their child’s observations and to look at their child’s
+                            portfolio as parental involvement is beneficial to children’s learning and development of
+                            self-esteem.
+                        </p>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="{{ parent_info_url }}" class="button button--green">REQUEST TOURS &<br> INFORMATION</a>
+                    </div>
+                </div>
+                <div class="infosection__image">
+                    <img src="{{ img_url }}/for_parents.jpg">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="large_img_section pb-5" id="testimonials">
+        <div class="container">
+            <div class="large_img_section__heading">
+                <h6 class="large_img_section__top_title mb-4">
+                    Parent Testimonials
+                </h6>
+                <h6 class="large_img_section__title">
+                    What Odyssey Parents Are Saying
+                </h6>
+                <div class="large_img_section__text">
+                    <p>
+                        Early education is one of the most important decisions you make as a parent.
+                        <br>See why hundreds of parents are raving about their children’s stay at Odyssey Nursery.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="large_img_section mb-2 pb-5 d-none d-md-block">
+        <img src="{{ img_url }}/home-testimonials-desktop.jpg">
+        </section>
+
+        <section class="large_img_section mb-2 pb-5 d-block d-md-none">
+        <img src="{{ img_url }}/home-testimonials-mobile.jpg">
+        </section>
+
+        <div class="container container--buttons">
+            <div class="mt-5">
+                <a href="{{ parent_info_url }}" class="button">REQUEST TOURS &<br> INFORMATION</a>
+                <a href="{{ locations_url }}" class="button button--secondary">View Locations</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partial/fullwidth-form.twig' %}
+{% endblock %}

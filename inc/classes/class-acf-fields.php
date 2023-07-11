@@ -1,0 +1,228 @@
+<?php
+
+class JmACF
+{
+
+  function __construct()
+  {
+    add_action('init', array($this, 'init_fields'));
+  }
+
+  function init_fields()
+  {
+    if( function_exists('acf_add_local_field_group') ):
+
+      acf_add_local_field_group(array(
+        'key' => 'group_63867e8ec2d8f',
+        'title' => 'Location Fields',
+        'fields' => array(
+          array(
+            'key' => 'field_63867e8f15b0c',
+            'label' => 'Short Description',
+            'name' => 'short_description',
+            'type' => 'textarea',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'maxlength' => '',
+            'rows' => '',
+            'placeholder' => '',
+            'new_lines' => '',
+          ),
+          array(
+            'key' => 'field_63867ef815b0d',
+            'label' => 'Details',
+            'name' => 'details',
+            'type' => 'wysiwyg',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'delay' => 0,
+            'tabs' => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+          ),
+          array(
+            'key' => 'field_63867f5e15b0e',
+            'label' => 'Facebook URL',
+            'name' => 'facebook_url',
+            'type' => 'url',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+          ),
+          array(
+            'key' => 'field_63867f7815b0f',
+            'label' => 'Instagram URL',
+            'name' => 'instagram_url',
+            'type' => 'url',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+          ),
+          array(
+            'key' => 'field_638680da711e1',
+            'label' => 'Email address',
+            'name' => 'email_address',
+            'type' => 'email',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+          ),
+          array(
+            'key' => 'field_6386844706b58',
+            'label' => 'Map Image',
+            'name' => 'map_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'return_format' => 'array',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+            'preview_size' => 'medium',
+          ),
+          array(
+            'key' => 'field_63ff97ac585fa',
+            'label' => 'Mobile Map Image',
+            'name' => 'mobile_map_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'return_format' => 'array',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+            'preview_size' => 'medium',
+          ),
+          array(
+            'key' => 'field_430216b58',
+            'label' => 'Testimonials Image',
+            'name' => 'testimonials_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'return_format' => 'array',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+            'preview_size' => 'medium',
+          ),
+          array(
+            'key' => 'field_431230210958',
+            'label' => 'Testimonials Mobile Image',
+            'name' => 'testimonials_mobile_image',
+            'type' => 'image',
+            'instructions' => '',
+            'required' => 0,
+            'conditional_logic' => 0,
+            'wrapper' => array(
+              'width' => '',
+              'class' => '',
+              'id' => '',
+            ),
+            'return_format' => 'array',
+            'library' => 'all',
+            'min_width' => '',
+            'min_height' => '',
+            'min_size' => '',
+            'max_width' => '',
+            'max_height' => '',
+            'max_size' => '',
+            'mime_types' => '',
+            'preview_size' => 'medium',
+          ),
+        ),
+        'location' => array(
+          array(
+            array(
+              'param' => 'post_type',
+              'operator' => '==',
+              'value' => 'location',
+            ),
+          ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'seamless',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+      ));
+
+      endif;
+  }
+}
+
+new JmACF;
