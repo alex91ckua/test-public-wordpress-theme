@@ -1,18 +1,63 @@
 <?php
 /**
- * Search results page
+ * The template for displaying search results pages.
  *
- * Methods for TimberHelper can be found in the /lib sub-directory
- *
- * @package  WordPress
- * @subpackage  Timber
- * @since   Timber 0.1
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
  */
 
-$templates = array( 'search.twig', 'archive.twig', 'index.twig' );
+get_header(); ?>
 
-$context          = Timber::context();
-$context['title'] = 'Search results for ' . get_search_query();
-$context['posts'] = new Timber\PostQuery();
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-Timber::render( $templates, $context );
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<h1 class="page-title">
+				<?php
+				/* translators: %s: Search query. */
+				printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() );
+				?>
+				</h1>
+			</header><!-- .page-header -->
+
+			<?php
+			// Start the loop.
+			while ( have_posts() ) :
+				the_post();
+				?>
+
+				<?php
+				/*
+				 * Run the loop for the search to output the results.
+				 * If you want to overload this in a child theme then include a file
+				 * called content-search.php and that will be used instead.
+				 */
+				get_template_part( 'content', 'search' );
+
+				// End the loop.
+			endwhile;
+
+			// Previous/next page navigation.
+			the_posts_pagination(
+				array(
+					'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+					'next_text'          => __( 'Next page', 'twentyfifteen' ),
+					/* translators: Hidden accessibility text. */
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+				)
+			);
+
+			// If no content, include the "No posts found" template.
+		else :
+			get_template_part( 'content', 'none' );
+
+		endif;
+		?>
+
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+<?php get_footer(); ?>

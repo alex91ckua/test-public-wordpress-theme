@@ -1,40 +1,68 @@
 <?php
 /**
- * The template for displaying Archive pages.
+ * The template for displaying archive pages
  *
  * Used to display archive-type pages if nothing more specific matches a query.
  * For example, puts together date-based pages if no date.php file exists.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * If you'd like to further customize these archive views, you may create a
+ * new template file for each one. For example, tag.php (Tag archives),
+ * category.php (Category archives), author.php (Author archives), etc.
  *
- * Methods for TimberHelper can be found in the /lib sub-directory
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package  WordPress
- * @subpackage  Timber
- * @since   Timber 0.2
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
  */
 
-$templates = array( 'archive.twig', 'index.twig' );
+get_header(); ?>
 
-$context = Timber::context();
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-$context['title'] = 'Archive';
-if ( is_day() ) {
-	$context['title'] = 'Archive: ' . get_the_date( 'D M Y' );
-} else if ( is_month() ) {
-	$context['title'] = 'Archive: ' . get_the_date( 'M Y' );
-} else if ( is_year() ) {
-	$context['title'] = 'Archive: ' . get_the_date( 'Y' );
-} else if ( is_tag() ) {
-	$context['title'] = single_tag_title( '', false );
-} else if ( is_category() ) {
-	$context['title'] = single_cat_title( '', false );
-	array_unshift( $templates, 'archive-' . get_query_var( 'cat' ) . '.twig' );
-} else if ( is_post_type_archive() ) {
-	$context['title'] = post_type_archive_title( '', false );
-	array_unshift( $templates, 'archive-' . get_post_type() . '.twig' );
-}
+		<?php if ( have_posts() ) : ?>
 
-$context['posts'] = new Timber\PostQuery();
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
-Timber::render( $templates, $context );
+			<?php
+			// Start the loop.
+			while ( have_posts() ) :
+				the_post();
+
+				/*
+				 * Include the post format-specific template for the content. If you want
+				 * to use this in a child theme, then include a file called content-___.php
+				 * (where ___ is the post format) and that will be used instead.
+				 */
+				get_template_part( 'content', get_post_format() );
+
+				// End the loop.
+			endwhile;
+
+			// Previous/next page navigation.
+			the_posts_pagination(
+				array(
+					'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+					'next_text'          => __( 'Next page', 'twentyfifteen' ),
+					/* translators: Hidden accessibility text. */
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+				)
+			);
+
+			// If no content, include the "No posts found" template.
+		else :
+			get_template_part( 'content', 'none' );
+
+		endif;
+		?>
+
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+<?php get_footer(); ?>
